@@ -28,27 +28,23 @@ function Home() {
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
           
           {/* Left Column: Content */}
-          <div className="w-full lg:w-3/5 relative z-10">
-            <div className="inline-flex items-center gap-3 bg-gray-900 text-white text-xs font-black uppercase tracking-[0.3em] px-5 py-2 rounded-full mb-8">
-              <span className="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></span>
-              Engineering the Future
-            </div>
+<div className="w-full lg:w-3/5 relative z-10 text-center">
+  <div className="inline-flex items-center gap-3 bg-gray-900 text-white text-xs font-black uppercase tracking-[0.3em] px-5 py-2 rounded-full mb-8 mx-auto">
+    <span className="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></span>
+    Engineering the Future
+  </div>
 
-            <h1 className="text-2xl md:text-3xl lg:text-6xl font-black text-gray-900 leading-[0.9] mb-8 uppercase italic">
-              Let's dream<br />
-              <span className="text-orange-500">&</span> <br />
-              build together.
-            </h1>
+  <h1 className="text-2xl md:text-3xl lg:text-6xl font-black text-gray-900 leading-[1.1] md:leading-[0.9] mb-8 uppercase italic">
+    Let's dream<br />
+    <span className="text-orange-500">&</span> <br />
+    build together.
+  </h1>
 
-            <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl leading-relaxed border-l-8 border-gray-100 pl-8 font-medium">
-              AVtech Plus LLP delivers end-to-end engineering and infrastructure 
-              solutions with a legacy of precision since 1981.
-            </p>
-
-            
-
-            
-          </div>
+  <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl leading-relaxed border-l-8 border-gray-100 pl-8 font-medium mx-auto lg:pl-8">
+    AVtech Plus LLP delivers end-to-end engineering and infrastructure 
+    solutions with a legacy of precision since 1981.
+  </p>
+</div>
 
           {/* Right Column: Industrial Slider */}
           <div className="w-full lg:w-2/5 relative">

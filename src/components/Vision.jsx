@@ -1,127 +1,165 @@
 import React from 'react';
 
 const Vision = () => {
-  // Mission points from company details
-  const missionPoints = [
-    "Deliver excellence through highest standards of quality, safety & efficiency",
-    "Maintain complete transparency in cost optimization and project execution",
-    "Utilize modern construction techniques and advanced technology for durability",
-    "Build long-term partnerships based on trust and reliability with clients",
-    "Ensure safe and healthy workplace for all employees and workers",
-    "Drive continuous improvement through innovation, teamwork and customer feedback"
-  ];
-
-  // Key expertise areas
-  const expertiseAreas = [
-    { name: "Project Management", icon: "📊" },
-    { name: "Contracts Management", icon: "📑" },
-    { name: "Civil Construction", icon: "🏗️" },
-    { name: "Planning & Design", icon: "✏️" },
-    { name: "Procurement & Execution", icon: "⚙️" },
-    { name: "Financial Modelling", icon: "💰" },
-    { name: "Supply Chain Management", icon: "🚚" },
-    { name: "Arbitration & Contract Handling", icon: "⚖️" }
-  ];
-
-  // Project types
-  const projectTypes = ["Road Projects", "Rail & Metro Projects", "Building Projects", "Irrigation Projects"];
-
   return (
     <section className="bg-white py-16 md:py-24 px-5">
       <div className="max-w-7xl mx-auto">
         
-        {/* Header Section */}
+        {/* Centered Main Heading */}
         <div className="text-center mb-16">
-          <div className="inline-block bg-orange-100 text-orange-600 text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
-            AVtech Plus LLP
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Vision & Mission
-          </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            Guiding our journey towards engineering excellence and nation-building
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
+            VISION AND MISSION
+          </h1>
+          <p className="text-gray-600 text-lg md:text-xl max-w-3xl mx-auto mb-6">
+            Guiding Our Journey towards Engineering Excellence and Nation Building
           </p>
-          <div className="w-24 h-1 bg-orange-500 mx-auto mt-6"></div>
+          <div className="relative inline-block">
+            <p className="text-orange-500 text-xl md:text-2xl italic font-medium">
+              “We make the spaces for businesses to recognize their vision”
+            </p>
+            <div className="w-24 h-1 bg-orange-500 mx-auto mt-4"></div>
+          </div>
         </div>
 
-        {/* Vision Section - Featured */}
-        <div className="mb-16">
-          <div className="bg-gradient-to-r from-orange-50 to-white rounded-2xl p-8 md:p-10 border border-orange-100">
-            <div className="flex flex-col md:flex-row gap-8 items-start">
-              <div className="md:w-1/3">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-14 h-14 bg-orange-500 rounded-xl flex items-center justify-center">
-                    <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                    </svg>
-                  </div>
-                  <h3 className="text-3xl font-bold text-gray-900">Our Vision</h3>
-                </div>
-                <div className="w-16 h-1 bg-orange-500 mb-4"></div>
-              </div>
-              <div className="md:w-2/3">
-                <p className="text-gray-800 text-xl leading-relaxed mb-4">
-                  <span className="font-bold text-orange-600">To provide world-class techno-commercial solutions,</span> understand business needs, and minimize risk for stakeholders.
-                </p>
-                <p className="text-gray-600 text-lg leading-relaxed">
-                  We aspire to become one of India's most trusted infrastructure development companies by delivering 
-                  innovative, sustainable, and high-quality engineering solutions that contribute to nation-building 
-                  and long-term economic growth.
-                </p>
-              </div>
+        {/* About Section with Text Left and Images Right */}
+        <div className="grid lg:grid-cols-2 gap-10 items-start mb-16 m-14">
+          {/* Left Side - About Text */}
+          <div>
+            <div className="mb-6">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">About Us</h2>
+              <div className="w-16 h-1 bg-orange-500 mb-6"></div>
             </div>
-          </div>
-        </div>
-
-        {/* Mission Section */}
-        <div className="mb-16">
-          <div className="text-center mb-10">
-            <h3 className="text-3xl font-bold text-gray-900 mb-2">Our Mission</h3>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              To become a front-runner in the techno-commercial field through excellence and leadership
-            </p>
-          </div>
-          
-          <div className="bg-gray-900 rounded-2xl p-8 md:p-10 text-white">
-            <p className="text-white text-xl leading-relaxed mb-8 text-center">
-              To become a front-runner in the techno-commercial field by delivering consistent superior solutions through core engineering expertise and leadership excellence.
-            </p>
             
-            <div className="grid md:grid-cols-2 gap-4 mt-8">
-              {missionPoints.map((point, index) => (
-                <div key={index} className="flex items-start gap-3">
-                  <div className="w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <span className="text-white text-xs font-bold">{index + 1}</span>
-                  </div>
-                  <p className="text-gray-300">{point}</p>
-                </div>
-              ))}
+            <div className="space-y-6 text-gray-700 leading-relaxed">
+              <p>
+                <span className="font-bold text-orange-600">AVtech Plus LLP</span> stands as a symbol of excellence in the Techno-Commercial domain — a firm built on integrity, innovation, and expertise. With a legacy dating back to 1981 and over 25 years of industry experience, AVtech Plus LLP has been instrumental in shaping landmark projects across India and is guided by principles of transparency, efficiency, and innovation.
+              </p>
+              
+              <p>
+                AVtech Plus is engaged in core and critical sectors of the economy and our capabilities span the entire spectrum from design till delivery. With over two decades of a strong, customer focused approach and a continuous quest for world-class quality, we have unmatched expertise across Engineering, Construction, Infrastructure Projects.
+              </p>
+              
+              <p>
+                Our team of seasoned professionals combines technical precision with commercial insight to deliver solutions that are not only efficient but transformative.
+              </p>
+              
+              <p>
+                AVtech Plus LLP continues to empower businesses, minimize risks, and create lasting value for stakeholders. We don't just build projects — we build trust, progress, and partnerships that stand the test of time.
+              </p>
+            </div>
+
+           
+          </div>
+
+          {/* Right Side - Circular Images */}
+          <div className="flex flex-col items-center gap-8">
+            {/* First Circle Image */}
+            <div className="relative">
+              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-orange-500 shadow-2xl">
+                <img 
+                  src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=400&h=400&fit=crop" 
+                  alt="Construction Project"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute -bottom-3 -right-3 bg-orange-500 rounded-full p-3 shadow-lg">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </div>
+            </div>
+
+            {/* Second Circle Image */}
+            <div className="relative">
+              <div className="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-orange-500 shadow-2xl">
+                <img 
+                  src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=400&h=400&fit=crop" 
+                  alt="Engineering Team"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute -bottom-3 -left-3 bg-orange-500 rounded-full p-3 shadow-lg">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2v16z" />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Core Expertise Section */}
-        <div className="mb-16">
-          <div className="text-center mb-10">
-            <h3 className="text-3xl font-bold text-gray-900 mb-2">Core Expertise</h3>
-            <p className="text-gray-600">Leveraging 25+ years of industry experience across diverse domains</p>
-            <div className="w-16 h-1 bg-orange-500 mx-auto mt-4"></div>
-          </div>
-          
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {expertiseAreas.map((area, index) => (
-              <div key={index} className="bg-gray-50 hover:bg-orange-50 transition-colors rounded-xl p-5 text-center border border-gray-100">
-                <div className="text-3xl mb-3">{area.icon}</div>
-                <h4 className="font-semibold text-gray-900">{area.name}</h4>
-              </div>
-            ))}
+        {/* Get a Free Consultation Section */}
+        <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-8 md:p-12 mt-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            
+            {/* Left Side - Text Content */}
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Get a Free <span className="text-orange-500">Consultation</span>
+              </h2>
+              <div className="w-16 h-1 bg-orange-500 mb-6"></div>
+              <p className="text-gray-700 text-lg leading-relaxed">
+                Hello, if you want to discuss about your requirement of construction or property feel free to fill this form and our expert will get in touch with you.
+              </p>
+             
+            </div>
+
+            {/* Right Side - Form */}
+            <div className="bg-white rounded-2xl shadow-xl p-6 md:p-8">
+              <form className="space-y-5">
+                <div>
+                  <label className="block text-gray-700 font-semibold mb-2">Full Name *</label>
+                  <input 
+                    type="text" 
+                    placeholder="Enter your full name"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-gray-700 font-semibold mb-2">Email Address *</label>
+                  <input 
+                    type="email" 
+                    placeholder="Enter your email address"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-gray-700 font-semibold mb-2">Mobile Number *</label>
+                  <input 
+                    type="tel" 
+                    placeholder="Enter your mobile number"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-gray-700 font-semibold mb-2">Your Enquiry *</label>
+                  <textarea 
+                    rows="4"
+                    placeholder="Please describe your construction or property requirements..."
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all resize-none"
+                    required
+                  ></textarea>
+                </div>
+
+                <button 
+                  type="submit"
+                  className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-[1.02] shadow-lg hover:shadow-xl"
+                >
+                  Send Message
+                </button>
+
+                <p className="text-xs text-gray-500 text-center mt-3">
+                  By submitting, you agree to our privacy policy. We'll never share your information.
+                </p>
+              </form>
+            </div>
           </div>
         </div>
-
-
-       
-
         
       </div>
     </section>

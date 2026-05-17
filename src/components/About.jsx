@@ -25,7 +25,7 @@ function About() {
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-10">
           
           {/* Left Section: Image */}
-          <div className="w-full lg:w-1/2">
+          <div className="w-full ">
             <div className="relative h-[400px] md:h-[500px] lg:h-[550px] rounded-2xl overflow-hidden shadow-lg">
               <img
                 src="/images/about.jpg"

@@ -14,7 +14,7 @@ const Services = () => {
     },
     {
       id: 2,
-      title: "Estimation & Costing",
+      title: "Estimation & Costing and Finance Modelling",
       description: "Accurate project cost estimation including CTC cost analysis and S-Curve-based cost tracking.",
       image: "/images/services2.avif",
       category: "consulting",

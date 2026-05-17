@@ -36,6 +36,7 @@ function App() {
             <>
               <Home />
               <About />
+              <Vision />
             </>
           }
         />
