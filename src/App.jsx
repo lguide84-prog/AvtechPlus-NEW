@@ -21,6 +21,7 @@ import Gallery from "./pages/Gallery";
 import { Contact } from "lucide-react";
 import ContactPage from "./pages/ContactPage";
 import TurnkeyServices from "./pages/TurnkeyServices";
+import AboutSections from "./pages/AboutSections";
 
 function App() {
   return (
@@ -45,7 +46,15 @@ function App() {
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/about-avtech" element={<AboutAvtech />} />
         <Route path="/our-promises" element={<OurPromises />} />
-        <Route path="/our-core-team" element={<OurCoreTeam />} />
+        <Route
+  path="/our-core-team"
+  element={
+    <>
+      <OurCoreTeam />
+      <AboutSections />
+    </>
+  }
+/>
         <Route path="/associations" element={<Association />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<ContactPage />} />

@@ -3,13 +3,13 @@ import { FiCheckCircle, FiTrendingUp, FiSettings, FiBriefcase, FiUsers, FiAward 
 
 const CoreLeadership = () => {
   const leadership = {
-    name: "Mr. A.K. Khurana",
-    role: "Managing Director & Principal Consultant",
+    name: "Mr. A S Khurana",
+    role: "Principal Consultant",
     experience: "30+ Years",
     bio: "A seasoned senior management professional with over 30 years of diverse experience across prestigious organizations. Mr. Khurana has successfully led and completed landmark projects throughout India, bringing invaluable expertise and leadership to AVtech Plus LLP.",
     expertise: [
       "Project Management",
-      "Contracts & Arbitration",
+      "Contracts",
       "Modern Construction Methodologies",
       "Resource Planning"
     ]
@@ -22,12 +22,20 @@ const CoreLeadership = () => {
     { category: "Architecture & Draftsmen", strength: 5, icon: <FiAward /> }
   ];
 
+  // Additional expertise bullet points
+  const additionalExpertise = [
+    "Has Expertise in executing and spearheading construction projects involving method engineering, development, resource planning with a flair for adopting modern construction methodologies in compliance with quality standards.",
+    "Has Extensive experience of planning and designs of construction projects involving architectural planning and designs, structural planning and designs, engineering planning and designs, in compliance with quality standards.",
+    "Proficient in Advanced (specialized) services like BIM (Building Information Modelling), Lean Management etc.",
+    "A keen communicator with problem solving, analytical and negotiation skills."
+  ];
+
   return (
     <section className="bg-white py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-5 md:px-8">
         
         {/* Header */}
-        <div className="mb-12">
+        <div className="mb-8">
           <span className="text-orange-600 font-black text-xs uppercase tracking-[0.3em] mb-4 block text-center md:text-left">
             Leadership & Governance
           </span>
@@ -38,7 +46,7 @@ const CoreLeadership = () => {
         </div>
 
         {/* Top Section: Image Left, Bio Right */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start mb-20">
           
           {/* LEFT: Image Placeholder */}
           <div className="relative group">
@@ -46,7 +54,7 @@ const CoreLeadership = () => {
             <div className="aspect-[4/5] bg-gray-200 rounded-xl overflow-hidden shadow-2xl border-4 border-white relative">
               <img 
                 src="/images/ceo.png" 
-                alt="Mr. A.K. Khurana" 
+                alt="Mr. A S Khurana" 
                 className="w-full h-full object-cover "
                 onError={(e) => { e.target.style.display='none' }}
               />
@@ -82,52 +90,68 @@ const CoreLeadership = () => {
           </div>
         </div>
 
-        {/* BOTTOM SECTION: General Organization Info */}
-<div className="border-t border-gray-100 pt-16">
-  
-  <div className="flex justify-center">
-    
-    <div className="w-full max-w-4xl">
-      <div className="mt-6 bg-gray-900 rounded-lg p-6">
-        
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-5 text-center">
-          
-          {/* Icon */}
-          <div className="flex-shrink-0">
-            <div className="w-14 h-14 rounded-full bg-gray-800 flex items-center justify-center">
-              <FiTrendingUp className="text-orange-500 text-2xl" />
+        {/* Additional Expertise Bullet Points Section */}
+        <div className="mb-20">
+          <div className="bg-gray-50 rounded-2xl p-8 md:p-10">
+            
+            <div className="space-y-4">
+              {additionalExpertise.map((point, index) => (
+                <div key={index} className="flex items-start gap-3">
+                  <div className="flex-shrink-0 mt-1">
+                    <div className="w-5 h-5 bg-orange-500 rounded-full flex items-center justify-center">
+                      <span className="text-white text-[10px] font-bold">✓</span>
+                    </div>
+                  </div>
+                  <p className="text-gray-700 leading-relaxed">
+                    {point}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
+        </div>
 
-          {/* Content */}
-          <div className="max-w-2xl">
-            <h3 className="text-white text-xl font-semibold mb-2">
-              We have an experienced team.
-            </h3>
+        {/* BOTTOM SECTION: General Organization Info */}
+        <div className="border-t border-gray-100 pt-8">
+          
+          <div className="flex justify-center">
+            
+            <div className="w-full max-w-4xl">
+              <div className="mt-6 bg-gray-900 rounded-lg p-6">
+                
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-5 text-center">
+                  
+                  {/* Icon */}
+                  <div className="flex-shrink-0">
+                    <div className="w-14 h-14 rounded-full bg-gray-800 flex items-center justify-center">
+                      <FiTrendingUp className="text-orange-500 text-2xl" />
+                    </div>
+                  </div>
 
-            <p className="text-gray-300 text-sm leading-relaxed">
-              Our team members are{" "}
-              <span className="text-orange-500 font-medium">
-                Skill-Based Allocated
-              </span>{" "}
-              to projects keeping in view the complexity, ensuring precision and maximum impact.
-            </p>
+                  {/* Content */}
+                  <div className="max-w-2xl">
+                    <h3 className="text-white text-xl font-semibold mb-2">
+                      We have an experienced team.
+                    </h3>
+
+                    <p className="text-gray-300 text-sm leading-relaxed">
+                      Our team members are{" "}
+                      <span className="text-orange-500 font-medium">
+                        Skill-Based Allocated
+                      </span>{" "}
+                      to projects keeping in view the complexity, ensuring precision and maximum impact.
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
           </div>
 
+          
+
         </div>
-      </div>
-    </div>
-
-  </div>
-
-  {/* Bottom Footer Note */}
-  <div className="mt-16 flex justify-center">
-    <p className="text-gray-500 text-[13px] uppercase font-bold tracking-[0.4em] text-center">
-      Professionalism • High Standards of Governance • Sustainability
-    </p>
-  </div>
-
-</div>
       </div>
     </section>
   );
